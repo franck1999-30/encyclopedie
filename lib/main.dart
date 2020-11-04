@@ -12,7 +12,6 @@ $ cd encyclopedie/
 USER@franck99 MINGW64 /e/logiciel/encyclopedie (master)
 $ ls
 android/  ios/  lib/  pubspec.lock  pubspec.yaml  README.md  test/  web/
-ddff
 */
 
 import 'package:flutter/material.dart';
@@ -28,8 +27,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Encyclopedie'),
         ),
-        body: Center(
-          child: Text('Encyclopedie'),
+        body: new Container(
+          color: Colors.white24,
+          child: new Image.network(
+              'https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I'),
+          alignment: Alignment.center,
         ),
       ),
     );
