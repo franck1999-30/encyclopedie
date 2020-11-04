@@ -29,9 +29,31 @@ class MyApp extends StatelessWidget {
         ),
         body: new Container(
           color: Colors.white24,
-          child: new Image.network(
-              'https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I'),
-          alignment: Alignment.center,
+          child: new Column(
+            children: [
+              new Container(
+                child: Stack(
+                  children: <Widget>[
+                    new Image.network(
+                        'https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I'),
+                    Text('Preikestolen, Forsand, Norway')
+                  ],
+                ),
+              ),
+              new Container(
+                width: double.infinity,
+                child: new Text(
+                  'NATURE',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    color: Colors.cyanAccent,
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
