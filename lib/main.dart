@@ -52,6 +52,16 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              new Container(
+                padding: EdgeInsets.all(20),
+                child: Text(
+                    "Lorsqu'on parle de la nature, on veut parler du monde dans son ensemble, mais abstraction faite de ce que l’homme y a mis et des transformations qu’il y a faites. Elle comprend donc tout l’univers, l’ensemble des phénomènes naturels tels que les vents, les marées, la course des astres, elle comprend donc aussi outre la matière, les plantes et les êtres vivants, dont l’homme en tant qu’il est aussi un être vivant.",
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 20.0,
+                    )),
+              ),
             ],
           ),
         ),
