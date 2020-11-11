@@ -41,17 +41,23 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              new Container(
-                width: double.infinity,
-                child: new Text(
-                  'NATURE',
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    color: Colors.cyanAccent,
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
+              Row(
+                children: [
+                  new Expanded(
+                    child: new Container(
+                      child: new Text(
+                        'NATURE',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          color: Colors.cyanAccent,
+                          fontSize: 30.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
+                  new Container(child: new Icon(Icons.edit)),
+                ],
               ),
               new Container(
                 padding: EdgeInsets.all(20),
